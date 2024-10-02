@@ -1,0 +1,98 @@
+version: "3.1"
+
+stories:
+
+- story: greet and explain functionalities
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: explain_functionalities
+  - action: utter_explain_functionalities
+
+- story: ask about document extraction
+  steps:
+  - intent: ask_document_extraction
+  - action: utter_document_extraction
+
+- story: ask about name entity recognition
+  steps:
+  - intent: ask_name_entity_recognition
+  - action: utter_name_entity_recognition
+
+- story: ask about document classification
+  steps:
+  - intent: ask_document_classification
+  - action: utter_document_classification
+
+- story: ask about digitalizing documents
+  steps:
+  - intent: ask_digitalize_documents
+  - action: utter_digitalize_documents
+
+- story: ask about search functionality
+  steps:
+  - intent: ask_search_functionality
+  - action: utter_search_functionality
+
+- story: ask about user verification
+  steps:
+  - intent: ask_user_verification
+  - action: utter_user_verification
+
+- story: ask about business rules
+  steps:
+  - intent: ask_business_rules
+  - action: utter_business_rules
+
+- story: ask about accounts management
+  steps:
+  - intent: ask_accounts_management
+  - action: utter_accounts_management
+
+- story: ask about financial features
+  steps:
+  - intent: ask_financial_features
+  - action: utter_financial_features
+
+- story: ask about payment reminders
+  steps:
+  - intent: ask_financial_features
+  - action: utter_financial_features
+  - intent: ask_payment_reminders
+  - action: utter_payment_reminders
+
+- story: ask about account balance
+  steps:
+  - intent: ask_financial_features
+  - action: utter_financial_features
+  - intent: ask_account_balance
+  - action: utter_account_balance
+
+
+- story: ask about transaction history
+  steps:
+  - intent: ask_financial_features
+  - action: utter_financial_features
+  - intent: ask_transaction_history
+  - action: utter_transaction_history
+
+
+- story: ask about invoice management
+  steps:
+  - intent: ask_financial_features
+  - action: utter_financial_features
+  - intent: ask_invoice_management
+  - action: utter_invoice_management
+
+
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: out_of_scope_retrace
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope

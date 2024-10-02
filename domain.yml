@@ -1,0 +1,109 @@
+version: "3.1"
+
+intents:
+  - greet
+  - acknowledgement
+  - goodbye
+  - explain_functionalities
+  - ask_document_extraction
+  - ask_name_entity_recognition
+  - ask_document_classification
+  - ask_digitalize_documents
+  - ask_search_functionality
+  - ask_user_verification
+  - ask_business_rules
+  - ask_accounts_management
+  - ask_financial_features
+  - ask_account_balance
+  - ask_transaction_history
+  - ask_invoice_management
+  - ask_expense_tracking
+  - ask_budgeting_assistance
+  - ask_payment_reminders
+  - bot_challenge
+  - out_of_scope
+
+responses:
+  utter_greet:
+    - text: "Hello! I'm here to explain the key functionalities of our ERP system. What would you like to know about?"
+
+  utter_acknowledgment:
+    - text: "You're very welcome! Feel free to ask me any other questions if you have more."
+
+  utter_goodbye:
+    - text: "Goodbye! If you have any more questions about our ERP functionalities, feel free to ask anytime."
+
+  utter_explain_functionalities:
+    - text: "Our ERP system offers several key functionalities:
+      - 1. Document Extraction
+      - 2. Name Entity Recognition
+      - 3. Document Classification
+      - 4. Document Digitalization
+      - 5. Search Functionality
+      - 6. User Verification
+      - 7. Business Rules Application
+      - 8. Accounts Management
+      - 9. Financial Features
+      - 10. Payment Reminders
+      Which functionality would you like me to explain in more detail?"
+
+  utter_document_extraction:
+    - text: "Document Extraction utilizes OCR technologies to extract text from various document formats. Users can upload a variety of documents for processing, making it easier to digitize and analyze physical documents. This is used for cases where some text from a document is to be extracted for processing."
+
+  utter_name_entity_recognition:
+    - text: "Name Entity Recognition (NER) identifies and classifies key entities (e.g., names, dates, locations) within extracted documents. This feature provides users with summaries of extracted information, making it easier to process and analyze large volumes of text. This helps to extract some particular entities from the extracted documents like date, name or transaction number etc."
+
+  utter_document_classification:
+    - text: "Document Classification categorizes documents based on the types of documents they are. This feature uses machine learning models to automatically sort and organize documents, improving efficiency in document management and processing."
+
+  utter_digitalize_documents:
+    - text: "The Document Digitalization feature converts physical documents into digital formats. It offers options for various file formats (e.g., PDF, Word) and storage locations, helping businesses transition to a paperless environment."
+
+  utter_search_functionality:
+    - text: "The Search Functionality allows users to query documents based on content. It provides suggestions and filters to refine search results, making it easier to find specific information within large document repositories."
+
+  utter_user_verification:
+    - text: "User Verification provides a screen to validate extracted information. Various levels of validation are available, including Data Entry, Validator, and Approver roles, ensuring data accuracy and compliance. This is really important when working with old or damaged documents where the text wouldn't be that clear."
+
+  utter_business_rules:
+    - text: "The Business Rules feature converts extracted information into required formats. It applies the given business rules on the extracted data. It provides support to enhance manual work, automating raw data transformation processes according to predefined business logic."
+
+  utter_accounts_management:
+    - text: "Accounts Management enables user registration and authentication. It also manages user roles and permissions to access specific functionalities, ensuring proper access control and security within the ERP system."
+
+  utter_financial_features:
+    - text: "Our financial features include:
+      - Account Balance Inquiry: Check balances for different accounts
+      - Transaction History: Retrieve and filter recent transactions
+      - Invoice Management: Generate, send, and track invoices
+      - Expense Tracking: Log and categorize expenses, with summary reports
+      - Budget Tracking: Set and monitor budgets for different categories
+      Would you like to know about any of these features in more detail?"
+
+  utter_account_balance:
+    - text: "This functionality enables users to check their account balances for different accounts."
+
+  utter_transaction_history:
+    - text: "This enables the users to track their transaction history. Users can retrieve recent transactions and filter them by date, type, or amount."
+
+  utter_invoice_management:
+    - text: "This feature assists the users in generating, sending and tracking invoices. It also provides status updates on invoice payments."
+
+  utter_expense_tracking:
+    - text: "The expense tracker helps the users log and categorize expenses. It also offers a summary of the monthly expenses or reports."
+
+  utter_budgeting_assistance:
+    - text: "This feature enables users to set budgets for different categories. Additionally, it enables the users to monitor their spending against those budgets."
+
+  utter_payment_reminders:
+    - text: "The Payment Reminders feature sends reminders for upcoming payments, due dates, or recurring invoices. This helps businesses stay on top of their financial obligations and improve cash flow management."
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa, designed to explain the functionalities of our ERP system."
+
+  utter_out_of_scope:
+    - text: "I'm sorry, this question is outside the scope of my capabilities. Could you ask about the ERP system?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

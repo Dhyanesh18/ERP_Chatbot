@@ -1,0 +1,315 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: acknowledgement
+  examples: |
+    - thanks for helping out
+    - thanks for helping
+    - thanks for the help
+    - Understood, thanks for the help
+    - Understood
+    - Got it
+    - Ok, understood
+    - Understood, thanks
+    - Thanks for the clarification
+    - Its clear, thanks
+    - Got it, thanks
+    - Ok got it
+    - Ok, got it thanks
+    - Thank you so much for the help
+    - 
+
+- intent: goodbye
+  examples: |
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - ok bye then
+
+- intent: explain_functionalities
+  examples: |
+    - What can this system do?
+    - Tell me about the features
+    - What functionalities does this ERP have?
+    - What are the key capabilities?
+    - Can you give me an overview of the system?
+    - What are the main functions of this ERP?
+    - Explain the system's capabilities
+    - What kind of tasks can you help with?
+    - I'm new here, what can you do?
+    - Give me a rundown of the ERP features
+    - explain the features
+    - what are the features available in this ERP?
+    - What are the functionalities available in the system?
+    - What kind of tasks can you help with in the system?
+    - What kind of tasks can you help with in this ERP?
+    - What are the various functionalities this ERP system possess?
+    - What are the various functionalities you can provide?
+    - What are the various functionalities you can explain about?
+    - List down the various functionalities available in this ERP
+    - Can you list all the functionalities available in this ERP?
+
+- intent: ask_document_extraction
+  examples: |
+    - Tell me about document extraction
+    - How does the system extract text from documents?
+    - What is OCR in this context?
+    - Can you explain the document extraction feature?
+    - How do I use document extraction?
+    - What is OCR?
+    - How does document extraction work?
+    - what is the functionality used to extract documents?
+    - documentation extraction
+
+- intent: ask_name_entity_recognition
+  examples: |
+    - What is name entity recognition?
+    - How does NER work in this system?
+    - Can you explain the entity recognition feature?
+    - What kind of entities can be recognized?
+    - How does the system identify key information in documents?
+    - name entity recognition
+    - How are entities recognized?
+    - How are particular entities recognized from the document?
+
+- intent: ask_document_classification
+  examples: |
+    - How does document classification work?
+    - Can you explain the document categorization feature?
+    - What criteria are used for classifying documents?
+    - How does the system sort documents?
+    - Tell me about automatic document classification
+    - document classification
+    - How do i classify documents?
+    - What is the functionality used to clasify documents?
+
+- intent: ask_digitalize_documents
+  examples: |
+    - How can I digitalize documents?
+    - How can i digitalize the documents?
+    - What formats can I convert physical documents to?
+    - Tell me about the document digitalization feature
+    - How does the system handle physical to digital conversion?
+    - Can you explain the process of digitalizing documents?
+    - digitalize documents
+
+- intent: ask_search_functionality
+  examples: |
+    - How does the search feature work?
+    - Can you explain the document search functionality?
+    - How can I find specific information in documents?
+    - Tell me about the search capabilities
+    - How do I use the search function?
+    - How do i search for documents?
+    - search functionality
+
+- intent: ask_user_verification
+  examples: |
+    - What is user verification?
+    - How does the system validate information?
+    - Can you explain the different levels of user verification?
+    - Tell me about the manual verification process
+    - How does user verification work in this system?
+    - Explain about the manual verification process
+    - What is the functionality used for verification of extracted documents?
+    - user verification
+    - What is the user verification for?
+    - How do I use the user verification
+    - How are low quailty documents verified?
+    - How are low quailty documents extracted?
+    - How are damaged documents verified?
+    - How are damaged documents extracted?
+
+- intent: ask_business_rules
+  examples: |
+    - What are business rules in this context?
+    - How does the system apply business rules?
+    - Can you explain how business rules work?
+    - Tell me about data transformation in the system
+    - How are business rules used to process information?
+    - What is the functionality used for transforming raw data into business based data?
+    - business rules
+    - How does the business rule functionality work?
+    - Tell me about the business rule functionality
+    - How is raw data transformed into business based data?
+    - Explain about the business rule functionality
+
+- intent: ask_accounts_management
+  examples: |
+    - How does account management work?
+    - Can you explain user registration and authentication?
+    - What is the functionality used for managing different accounts of the user?
+    - Tell me about user roles and permissions
+    - How are accounts managed in the system?
+    - What features are available for managing accounts?
+    - how are different accounts of the user managed?
+    - can you explain how are user accounts managed?
+    - accounts management
+
+- intent: ask_financial_features
+  examples: |
+    - What financial features does the system have?
+    - How does transaction history work?
+    - Explain the financial features available in the system
+    - Explain the financial features available
+    - financial features available in the system
+    - financial features
+    - What are the financial features the system has?
+    - Can you explain the financial features available in the system
+    - List financial features available in the system
+    - financial features
+
+- intent: ask_account_balance
+  examples: |
+    - Can you tell about account balance inquiry?
+    - What is the use of account balance inquiry feature?
+    - What does account balance inquiry feature do?
+    - Tell me about account balance inquiry
+    - account balance
+    - what is this account balance feature
+    - how does the account balance feature work?
+    - Can you explain the account balance functionality?
+    - How do i check my account balance?
+    - What is the functionality used to check account balance?
+
+- intent: ask_transaction_history
+  examples: |
+    - Can you tell about transaction history?
+    - How do i retrieve my transaction history?
+    - How do i get my transaction history?
+    - Where do i get my transaction history?
+    - Can you help me retrieve my transaction history?
+    - can you guide me to get my transaction history?
+    - what is the feature used to retrieve transaction history?
+    - transaction history
+    - what is transaction history?
+    - Tell me about the transaction history
+
+- intent: ask_invoice_management
+  examples: |
+    - How do i get my invoices?
+    - Help me get my invoices please
+    - How do i manage my invoices?
+    - Help me manage my invoices?
+    - What is the invoice management feature used for?
+    - Explain about the invoice management feature
+    - Why do we use the invoice management feature?
+    - What are the uses of invoice management feature?
+    - invoice management
+    - Can you explain about invoice management?
+    - How does invoice management work?
+    - Tell me about the invoice management functionality
+
+- intent: ask_expense_tracking
+  examples: |
+    - How do i track my expenses?
+    - Help me track my expences
+    - What is the use of expense tracking feature?
+    - Explain about the expense tracking feature please
+    - How do i use the expense tracking feature?
+    - Guide me about tracking my expenses please
+    - What is the feature used to track my expenses?
+    - expense tracking
+    - can you explain about expense tracking
+    - How does expense tracking work?
+    - Tell me about the expense tracking functionality
+
+- intent: ask_payment_reminders
+  examples: |
+    - How do payment reminders work?
+    - Can you explain the reminder system for payments?
+    - Tell me about due date notifications
+    - How does the system handle recurring invoices?
+    - What kind of payment reminders can I set up?
+    - payment reminders
+    - How does payment reminder work?
+    - can you explain about payment reminder?
+    - What is this payment reminder functionality?
+    - Tell me about the payment remider functionality
+
+- intent: ask_budgeting_assistance
+  examples: |
+    - How to make a budget effectively?
+    - Does the system have and budgeting assistant?
+    - How can i get some budgeting assistance?
+    - How does the budgeting assistant work?
+    - Can i get some budgeting assistance?
+    - Help me get some budgeting assistance
+    - I would like to get some budgeting assistance
+    - I need some budgeting assistance
+    - Can you recommend some feature that will assist in making the budget?
+    - i would like to know about the budgeting assistant
+    - budgeting assitance
+    - How does budgeting assitance work?
+    - Can you explain about budgeting assitant?
+    - What is this budgeting assitant functionality?
+    - Tell me about the budgeting assitance functionality
+
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - Are you a human?
+    - Am I talking to a bot?
+    - Am I talking to a human?
+    - bot
+    - Am I chatting with a bot?
+    - Am I chatting with a human?
+    - Are you Chatgpt?
+    - are you a human?
+    - I guess i am talking to a bot?
+    - Aren't you a bot?
+    - I guess you are not a human
+    -
+
+- intent: out_of_scope
+  examples: |
+    - What's the weather like tomorrow?
+    - Can you recommend a good restaurant nearby?
+    - What is the capital of Japan?
+    - How tall is the Eiffel Tower?
+    - Tell me a joke.
+    - What is the square root of 64?
+    - Who won the game last night?
+    - What's your favorite movie?
+    - Can you play some music for me?
+    - How do I get to the nearest gas station?
+    - What time is it in New York right now?
+    - Do you know any good books to read?
+    - What's 10 divided by 2?
+    - Can you order me a taxi?
+    - What is the population of Canada?
+    - How far is the moon from Earth?
+    - Who is the president of the United States?
+    - What should I wear today?
+    - What is the meaning of life?
+    - Can you tell me a fun fact?
+    - What is the stock price of Apple?
+    - How do I bake a cake?
+    - What's 5 multiplied by 6?
+    - Can you send an email for me?
+    - Who is the richest person in the world?
+    - Can you cook
+    - Can you send me a flower
+    - How do i become a billionaire?

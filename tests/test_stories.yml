@@ -1,0 +1,70 @@
+stories:
+- story: happy path 1
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      What can this system do?
+    intent: explain_functionalities
+  - action: utter_explain_functionalities
+  - user: |
+      Tell me about document extraction
+    intent: ask_document_extraction
+  - action: utter_document_extraction
+  - user: |
+      Thanks for the information
+    intent: acknowledgement
+  - action: utter_acknowledgment
+  - user: |
+      goodbye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 2
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      What financial features does the system have?
+    intent: ask_financial_features
+  - action: utter_financial_features
+  - user: |
+      Can you tell about account balance inquiry?
+    intent: ask_account_balance
+  - action: utter_account_balance
+  - user: |
+      Thanks
+    intent: acknowledgement
+  - action: utter_acknowledgment
+  - user: |
+      bye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: unhappy path
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      What's the weather like today?
+    intent: out_of_scope
+  - action: utter_out_of_scope
+  - user: |
+      Can you explain the document search functionality?
+    intent: ask_search_functionality
+  - action: utter_search_functionality
+  - user: |
+      Thanks
+    intent: acknowledgement
+  - action: utter_acknowledgment
+  - user: |
+      goodbye
+    intent: goodbye
+  - action: utter_goodbye
+  
